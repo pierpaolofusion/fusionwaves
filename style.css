@@ -21,20 +21,20 @@ header {
 }
 
 main {
-    padding: 100px 40px 40px 40px;
-    max-width: 1000px;
+    padding: 80px 40px 40px 40px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .titolo {
     text-align: center;
-    font-size: 3em;
-    margin-bottom: 30px;
+    font-size: 4em;
+    margin-bottom: 40px;
 }
 
 .descrizione p {
     text-align: justify;
-    font-size: 1.3em;
-    line-height: 1.7em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    margin-bottom: 25px;
 }
