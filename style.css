@@ -1,7 +1,35 @@
 body {
-    font-family: sans-serif;
-    background-color: #111;
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
-    padding: 2em;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
 }
