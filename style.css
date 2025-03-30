@@ -21,17 +21,20 @@ header {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    padding: 20px;
+    padding: 100px 40px 40px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.content {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
+.titolo {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.descrizione p {
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
 }
