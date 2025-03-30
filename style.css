@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 320px;
+    width: 420px;
     height: auto;
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
 }
@@ -83,4 +83,19 @@ main {
 
 .descrizione p strong {
     font-size: 1.3em;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    .logo {
+        width: 300px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    .logo {
+        width: 220px;
+    }
 }
