@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 420px;
+    width: 280px;
     height: auto;
     filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
 }
@@ -97,5 +97,20 @@ main {
 @media (max-width: 480px) {
     .logo {
         width: 220px;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    .logo {
+        width: 200px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    .logo {
+        width: 140px;
     }
 }
