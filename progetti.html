@@ -14,46 +14,76 @@
       margin: 0;
       padding: 0 10vw;
     }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 1em;
+    }
     .project {
-      display: flex;
-      flex-wrap: wrap;
       margin-bottom: 4em;
-      align-items: center;
     }
     .project img {
-      max-width: 400px;
-      width: 100%;
-      margin-left: 2em;
-      border-radius: 10px;
+      max-width: 100%;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s;
     }
-    .project h2 {
+    .project img:hover {
+      transform: scale(1.03);
+    }
+    .project-title {
       font-size: 2.5em;
       font-family: 'Playfair Display', serif;
-      margin-bottom: 0.5em;
       color: #f0c040;
+      margin-top: 1em;
+      cursor: pointer;
     }
-    .text {
-      flex: 1 1 300px;
+    .project-description {
+      display: none;
+      margin-top: 1em;
+      font-size: 1.1em;
+      line-height: 1.5em;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center; font-size: 3em;">Progetti</h1>
+  <h1>Progetti</h1>
 
   <div class="project">
-    <div class="text">
-      <h2>Kronos</h2>
-      <p>Un progetto multimediale dove il tempo diventa suono, visione, esperienza. Una progressione visiva e musicale che trasporta lo spettatore in un viaggio immersivo, ispirato alle geometrie temporali di Vivaldi.</p>
+    <div class="project-title" onclick="toggle('desc-kronos')">Kronos</div>
+    <a onclick="toggle('desc-kronos')">
+      <img src="img/kronos.png" alt="Kronos">
+    </a>
+    <div id="desc-kronos" class="project-description">
+      <p>"Kronos" è un progetto multimediale in cui il tempo si fa suono, visione, esperienza. La progressione musicale e visiva accompagna lo spettatore in un viaggio che unisce l’ineluttabilità del tempo con il desiderio di sospenderlo. La geometria armonica si dissolve in sogno e riflessione, con sezioni in cui l’oboe cerca di spezzare il fluire, mentre le percussioni lo rincorrono e il violino lo disegna nello spazio. Il progetto è ispirato alla percezione ciclica e sospesa del tempo in Vivaldi.</p>
     </div>
-    <img src="img/kronos.png" alt="Kronos">
   </div>
 
   <div class="project">
-    <div class="text">
-      <h2>Contaminazioni</h2>
-      <p>Un incontro fra mondi sonori, visivi e stilistici. I linguaggi si fondono tra musica classica e moderna, colonne sonore, improvvisazione e immagini proiettate, creando un concerto-spettacolo multisensoriale.</p>
+    <div class="project-title" onclick="toggle('desc-contaminazioni')">Contaminazioni</div>
+    <a onclick="toggle('desc-contaminazioni')">
+      <img src="img/contaminazioni.png" alt="Contaminazioni">
+    </a>
+    <div id="desc-contaminazioni" class="project-description">
+      <p>"Contaminazioni" rappresenta un’esperienza che attraversa barriere musicali e stilistiche. L’oboe, il violino, la viola, il violoncello e le percussioni si intrecciano in un percorso sonoro dove immagini proiettate in tempo reale espandono il linguaggio musicale. I generi si fondono: la musica classica dialoga con il jazz, il pop, la musica da film. L’improvvisazione è parte dell’atto creativo e della relazione con il pubblico. Ogni concerto è un evento multisensoriale.</p>
     </div>
-    <img src="img/contaminazioni.png" alt="Contaminazioni">
   </div>
+
+  <div class="project">
+    <div class="project-title" onclick="toggle('desc-cinema')">Metti una sera al cinema</div>
+    <a onclick="toggle('desc-cinema')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Film_reel_icon.svg/512px-Film_reel_icon.svg.png" alt="Metti una sera al cinema" style="max-width: 300px;">
+    </a>
+    <div id="desc-cinema" class="project-description">
+      <p>“Metti una sera al cinema” è uno spettacolo-concerto che omaggia i più grandi compositori di musica da film: Ennio Morricone, Nino Rota, Bacalov, Nicola Piovani. Ma anche chi è stato preso in prestito da grandi registi, come Luigi Tenco, Charles Aznavour, Pino Daniele, Paolo Conte, Astor Piazzolla. La musica da film è un linguaggio che unisce musica colta e popolare, parole e immagini, evocazione e memoria. L’ensemble di Fusion Waves propone una selezione intensa e raffinata con archi, oboe, clarinetto, percussioni, pianoforte e voce.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
