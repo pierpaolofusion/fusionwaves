@@ -3,99 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Media - Fusion Waves</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         html, body {
-            background-color: #000000 !important;
-            color: white;
             margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            background-image: url('img/media.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
             font-family: Arial, sans-serif;
-            overflow-x: hidden;
         }
 
-        header {
+        .click-area {
+            position: absolute;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+        }
+
+        .click-area:hover {
+            outline: 2px solid #f0c040;
+        }
+
+        .label {
+            position: absolute;
+            color: white;
+            font-size: 0.95em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 3px 8px;
+            border-radius: 5px;
+            white-space: nowrap;
+            transform: translateX(-50%);
+        }
+
+        #soraya { top: 15%; left: 12%; }
+        #stefania { top: 70%; left: 12%; }
+        #pierpaolo { top: 70%; left: 78%; }
+        #gianfabio { top: 15%; left: 78%; }
+        #ezio { top: 43%; left: 68%; }
+        #nadia { top: 43%; left: 24%; }
+
+        #label-soraya { top: 13%; left: 12%; }
+        #label-stefania { top: 68%; left: 12%; }
+        #label-pierpaolo { top: 68%; left: 78%; }
+        #label-gianfabio { top: 13%; left: 78%; }
+        #label-ezio { top: 41%; left: 68%; }
+        #label-nadia { top: 41%; left: 24%; }
+
+        .menu {
             position: fixed;
             top: 0;
-            right: 2vw;
-            z-index: 1100;
-        }
-
-        header img.logo {
-            height: 90px;
-            width: auto;
-        }
-
-        nav.menu {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             background-color: #111;
-            padding: 0.7em 0;
             text-align: center;
+            padding: 0.5em 0;
             z-index: 1000;
         }
 
-        nav.menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav.menu ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav.menu ul li a {
+        .menu a {
             color: white;
             text-decoration: none;
+            margin: 0 15px;
             font-size: 1.1em;
-            transition: color 0.3s;
         }
 
-        nav.menu ul li a:hover {
+        .menu a:hover {
             color: #f0c040;
         }
 
-        main {
-            padding-top: 120px;
-            text-align: center;
-        }
-
-        .media-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+        .logo {
+            position: fixed;
+            top: 0.4em;
+            right: 2vw;
+            height: 80px;
+            z-index: 1100;
         }
     </style>
 </head>
 <body>
-<header>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="progetti.html">Progetti</a>
+        <a href="concerti.html">I Concerti</a>
+        <a href="media.html">Media</a>
+        <a href="contatti.html">Contatti</a>
+    </div>
     <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a>
-</header>
 
-<nav class="menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="progetti.html">Progetti</a></li>
-        <li><a href="concerti.html">I Concerti</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-    </ul>
-</nav>
+    <a href="soraya.html" class="click-area" id="soraya"></a>
+    <a href="stefania.html" class="click-area" id="stefania"></a>
+    <a href="pierpaolo.html" class="click-area" id="pierpaolo"></a>
+    <a href="gianfabio.html" class="click-area" id="gianfabio"></a>
+    <a href="ezio.html" class="click-area" id="ezio"></a>
+    <a href="nadia.html" class="click-area" id="nadia"></a>
 
-<main>
-    <img src="img/media.jpg" usemap="#volti" alt="Foto gruppo Fusion Waves" class="media-img">
-    <map name="volti">
-        <area shape="circle" coords="170,130,50" href="soraya.html" alt="Soraya">
-        <area shape="circle" coords="170,470,50" href="stefania.html" alt="Stefania">
-        <area shape="circle" coords="780,470,50" href="pierpaolo.html" alt="Pierpaolo">
-        <area shape="circle" coords="780,130,50" href="gianfabio.html" alt="Gianfabio">
-        <area shape="circle" coords="670,300,50" href="ezio.html" alt="Ezio">
-        <area shape="circle" coords="280,300,50" href="nadia.html" alt="Nadia">
-    </map>
-</main>
+    <div class="label" id="label-soraya">Soraya</div>
+    <div class="label" id="label-stefania">Stefania</div>
+    <div class="label" id="label-pierpaolo">Pierpaolo</div>
+    <div class="label" id="label-gianfabio">Gianfabio</div>
+    <div class="label" id="label-ezio">Ezio</div>
+    <div class="label" id="label-nadia">Nadia</div>
 </body>
 </html>
