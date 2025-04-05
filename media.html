@@ -5,11 +5,12 @@
     <title>Media - Fusion Waves</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
+        html, body {
             background-color: #000000 !important;
             color: white;
             margin: 0;
             font-family: Arial, sans-serif;
+            overflow-x: hidden;
         }
 
         header {
@@ -62,16 +63,11 @@
             text-align: center;
         }
 
-        .titolo {
-            font-size: 2.5em;
-            margin-bottom: 1em;
-        }
-
         .media-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+            width: 100vw;
+            height: 90vh;
+            object-fit: cover;
+            border-radius: 0;
         }
     </style>
 </head>
@@ -91,18 +87,15 @@
 </nav>
 
 <main>
-    <h1 class="titolo">Media</h1>
-    <div>
-        <img src="img/media.jpg" usemap="#volti" alt="Foto gruppo Fusion Waves" class="media-img">
-        <map name="volti">
-            <area shape="circle" coords="120,150,50" href="soraya.html" alt="Soraya">
-            <area shape="circle" coords="120,500,50" href="stefania.html" alt="Stefania">
-            <area shape="circle" coords="950,500,50" href="pierpaolo.html" alt="Pierpaolo">
-            <area shape="circle" coords="950,150,50" href="gianfabio.html" alt="Gianfabio">
-            <area shape="circle" coords="820,320,50" href="ezio.html" alt="Ezio">
-            <area shape="circle" coords="250,320,50" href="nadia.html" alt="Nadia">
-        </map>
-    </div>
+    <img src="img/media.jpg" usemap="#volti" alt="Foto gruppo Fusion Waves" class="media-img">
+    <map name="volti">
+        <area shape="circle" coords="120,150,50" href="soraya.html" alt="Soraya">
+        <area shape="circle" coords="120,500,50" href="stefania.html" alt="Stefania">
+        <area shape="circle" coords="950,500,50" href="pierpaolo.html" alt="Pierpaolo">
+        <area shape="circle" coords="950,150,50" href="gianfabio.html" alt="Gianfabio">
+        <area shape="circle" coords="820,320,50" href="ezio.html" alt="Ezio">
+        <area shape="circle" coords="250,320,50" href="nadia.html" alt="Nadia">
+    </map>
 </main>
 </body>
 </html>
