@@ -79,6 +79,87 @@
     <a href="index.html"><img src="img/logo.png" alt="Fusion Waves logo"></a>
   </div>
 
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Media - Fusion Waves</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      background-image: url('img/media.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.7em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #f0c040;
+    }
+    .logo-container {
+      position: fixed;
+      top: 0.3em;
+      right: 2vw;
+      z-index: 1100;
+    }
+    .logo-container img {
+      height: 85px;
+      object-fit: contain;
+    }
+    .hotspot {
+      position: absolute;
+      width: 135px;
+      height: 135px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 1;
+    }
+    .label {
+      position: absolute;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
+      display: none;
+      z-index: 2;
+    }
+    .hotspot:hover + .label {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="progetti.html">Progetti</a>
+    <a href="concerti.html">Concerti</a>
+    <a href="media.html">Media</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <div class="logo-container">
+    <a href="index.html"><img src="img/logo.png" alt="Fusion Waves logo"></a>
+  </div>
+
   <a href="img/soraya.png" class="hotspot" style="top: 30%; left: 19%;"></a><div class="label" style="top: 30%; left: 19%;">Soraya</div>
   <a href="img/stefania.png" class="hotspot" style="top: 65%; left: 15%;"></a><div class="label" style="top: 65%; left: 15%;">Stefania</div>
   <a href="img/pierpaolo.png" class="hotspot" style="top: 76%; left: 80%;"></a><div class="label" style="top: 60%; left: 76%;">Pierpaolo</div>
@@ -86,5 +167,7 @@
   <a href="img/ezio.png" class="hotspot" style="top: 43%; left: 58%;"></a><div class="label" style="top: 43%; left: 58%;">Ezio</div>
   <a href="img/nadia.png" class="hotspot" style="top: 36%; left: 37%;"></a><div class="label" style="top: 36%; left: 37%;">Nadia</div>
 
+</body>
+</html>
 </body>
 </html>
