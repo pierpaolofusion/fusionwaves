@@ -10,6 +10,7 @@
             color: white;
             margin: 0;
             font-family: Arial, sans-serif;
+            overflow-x: hidden;
         }
 
         header {
@@ -58,20 +59,20 @@
         }
 
         main {
-            padding-top: 120px;
+            padding-top: 110px;
             text-align: center;
         }
 
         .titolo {
             font-size: 2.5em;
-            margin-bottom: 1em;
+            margin: 1em 0;
         }
 
         .media-img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+            width: 100vw;
+            max-height: 90vh;
+            object-fit: cover;
+            border-radius: 0;
         }
     </style>
 </head>
@@ -91,7 +92,6 @@
 </nav>
 
 <main>
-    <h1 class="titolo">Media</h1>
     <div>
         <img src="img/media.jpg" alt="Foto gruppo Fusion Waves" class="media-img">
     </div>
