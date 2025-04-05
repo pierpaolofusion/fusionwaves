@@ -48,24 +48,23 @@
             pointer-events: none;
         }
 
-        /* Nuove posizioni e dimensioni */
-        #soraya { top: 22%; left: 16%; }
-        #label-soraya { top: 20%; left: 16%; }
+        #soraya { top: 25%; left: 18%; }
+        #label-soraya { top: 23%; left: 18%; }
 
         #stefania { top: 70%; left: 16%; }
         #label-stefania { top: 68%; left: 16%; }
 
-        #pierpaolo { top: 66%; left: 78%; }
-        #label-pierpaolo { top: 64%; left: 78%; }
+        #pierpaolo { top: 64%; left: 78%; }
+        #label-pierpaolo { top: 62%; left: 78%; }
 
-        #gianfabio { top: 22%; left: 72%; }
-        #label-gianfabio { top: 20%; left: 72%; }
+        #gianfabio { top: 24%; left: 70%; }
+        #label-gianfabio { top: 22%; left: 70%; }
 
         #ezio { top: 43%; left: 62%; }
         #label-ezio { top: 41%; left: 62%; }
 
-        #nadia { top: 43%; left: 40%; }
-        #label-nadia { top: 41%; left: 40%; }
+        #nadia { top: 40%; left: 40%; }
+        #label-nadia { top: 38%; left: 40%; }
 
         .click-area:hover + .label {
             opacity: 1;
@@ -111,11 +110,26 @@
     </div>
     <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a>
 
-    <a href="soraya.html" class="click-area" id="soraya"></a><div class="label" id="label-soraya">Soraya</div>
-    <a href="stefania.html" class="click-area" id="stefania"></a><div class="label" id="label-stefania">Stefania</div>
-    <a href="pierpaolo.html" class="click-area" id="pierpaolo"></a><div class="label" id="label-pierpaolo">Pierpaolo</div>
-    <a href="gianfabio.html" class="click-area" id="gianfabio"></a><div class="label" id="label-gianfabio">Gianfabio</div>
-    <a href="ezio.html" class="click-area" id="ezio"></a><div class="label" id="label-ezio">Ezio</div>
-    <a href="nadia.html" class="click-area" id="nadia"></a><div class="label" id="label-nadia">Nadia</div>
+    <a href="soraya.html" class="click-area" id="soraya" onmouseover="playNote(6)"></a><div class="label" id="label-soraya">Soraya</div>
+    <a href="stefania.html" class="click-area" id="stefania" onmouseover="playNote(5)"></a><div class="label" id="label-stefania">Stefania</div>
+    <a href="pierpaolo.html" class="click-area" id="pierpaolo" onmouseover="playNote(0)"></a><div class="label" id="label-pierpaolo">Pierpaolo</div>
+    <a href="gianfabio.html" class="click-area" id="gianfabio" onmouseover="playNote(1)"></a><div class="label" id="label-gianfabio">Gianfabio</div>
+    <a href="ezio.html" class="click-area" id="ezio" onmouseover="playNote(2)"></a><div class="label" id="label-ezio">Ezio</div>
+    <a href="nadia.html" class="click-area" id="nadia" onmouseover="playNote(3)"></a><div class="label" id="label-nadia">Nadia</div>
+
+    <script>
+        const notes = [
+            'audio/do.mp3',
+            'audio/re.mp3',
+            'audio/mi.mp3',
+            'audio/fa.mp3',
+            'audio/sol.mp3',
+            'audio/la.mp3',
+            'audio/si.mp3'
+        ];
+        function playNote(index) {
+            new Audio(notes[index]).play();
+        }
+    </script>
 </body>
 </html>
