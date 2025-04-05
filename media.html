@@ -43,21 +43,34 @@
             border-radius: 5px;
             white-space: nowrap;
             transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
         }
 
-        #soraya { top: 15%; left: 12%; }
-        #stefania { top: 70%; left: 12%; }
-        #pierpaolo { top: 70%; left: 78%; }
-        #gianfabio { top: 15%; left: 78%; }
-        #ezio { top: 43%; left: 68%; }
-        #nadia { top: 43%; left: 24%; }
+        /* Posizionamenti aggiornati */
+        #soraya { top: 20%; left: 12%; }
+        #label-soraya { top: 18%; left: 12%; }
 
-        #label-soraya { top: 13%; left: 12%; }
+        #stefania { top: 70%; left: 12%; }
         #label-stefania { top: 68%; left: 12%; }
+
+        #pierpaolo { top: 70%; left: 78%; }
         #label-pierpaolo { top: 68%; left: 78%; }
-        #label-gianfabio { top: 13%; left: 78%; }
+
+        #gianfabio { top: 20%; left: 78%; }
+        #label-gianfabio { top: 18%; left: 78%; }
+
+        #ezio { top: 43%; left: 68%; }
         #label-ezio { top: 41%; left: 68%; }
-        #label-nadia { top: 41%; left: 24%; }
+
+        #nadia { top: 43%; left: 36%; }
+        #label-nadia { top: 41%; left: 36%; }
+
+        /* Visibilità al passaggio del mouse */
+        .click-area:hover + .label {
+            opacity: 1;
+        }
 
         .menu {
             position: fixed;
@@ -99,18 +112,11 @@
     </div>
     <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a>
 
-    <a href="soraya.html" class="click-area" id="soraya"></a>
-    <a href="stefania.html" class="click-area" id="stefania"></a>
-    <a href="pierpaolo.html" class="click-area" id="pierpaolo"></a>
-    <a href="gianfabio.html" class="click-area" id="gianfabio"></a>
-    <a href="ezio.html" class="click-area" id="ezio"></a>
-    <a href="nadia.html" class="click-area" id="nadia"></a>
-
-    <div class="label" id="label-soraya">Soraya</div>
-    <div class="label" id="label-stefania">Stefania</div>
-    <div class="label" id="label-pierpaolo">Pierpaolo</div>
-    <div class="label" id="label-gianfabio">Gianfabio</div>
-    <div class="label" id="label-ezio">Ezio</div>
-    <div class="label" id="label-nadia">Nadia</div>
+    <a href="soraya.html" class="click-area" id="soraya"></a><div class="label" id="label-soraya">Soraya</div>
+    <a href="stefania.html" class="click-area" id="stefania"></a><div class="label" id="label-stefania">Stefania</div>
+    <a href="pierpaolo.html" class="click-area" id="pierpaolo"></a><div class="label" id="label-pierpaolo">Pierpaolo</div>
+    <a href="gianfabio.html" class="click-area" id="gianfabio"></a><div class="label" id="label-gianfabio">Gianfabio</div>
+    <a href="ezio.html" class="click-area" id="ezio"></a><div class="label" id="label-ezio">Ezio</div>
+    <a href="nadia.html" class="click-area" id="nadia"></a><div class="label" id="label-nadia">Nadia</div>
 </body>
 </html>
