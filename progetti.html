@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Progetti - Fusion Waves</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
@@ -16,6 +17,7 @@
     nav {
       position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
       background-color: #111;
       padding: 0.7em 0;
@@ -37,13 +39,14 @@
 
     .logo-container {
       position: fixed;
-      top: 0.2em;
+      top: 0.3em;
       right: 2vw;
       z-index: 1100;
     }
 
     .logo-container img {
-      height: 90px;
+      height: 85px;
+      object-fit: contain;
     }
 
     h1 {
@@ -82,7 +85,7 @@
     }
 
     .project img {
-      width: 280px;
+      width: 300px;
       max-width: 100%;
       margin-left: 2em;
       border-radius: 10px;
@@ -96,7 +99,6 @@
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="progetti.html">Progetti</a>
@@ -116,7 +118,7 @@
       <div class="project-text">
         <div class="project-title" onclick="toggle('desc-kronos')">Kronos</div>
         <div id="desc-kronos" class="project-description">
-          <p>"Kronos" è un progetto multimediale in cui il tempo si fa suono, visione, esperienza. La progressione musicale e visiva accompagna lo spettatore in un viaggio che unisce l’ineluttabilità del tempo con il desiderio di sospenderlo.</p>
+          <p>"Kronos" è un progetto multimediale in cui il tempo si fa suono, visione, esperienza. La progressione musicale e visiva accompagna lo spettatore in un viaggio che unisce l’ineluttabilità del tempo con il desiderio di sospenderlo. La geometria armonica si dissolve in sogno e riflessione, con sezioni in cui l’oboe cerca di spezzare il fluire, mentre le percussioni lo rincorrono e il violino lo disegna nello spazio. Il progetto è ispirato alla percezione ciclica e sospesa del tempo in Vivaldi.</p>
         </div>
       </div>
       <img src="img/kronos.png" alt="Kronos" onclick="toggle('desc-kronos')">
@@ -126,7 +128,7 @@
       <div class="project-text">
         <div class="project-title" onclick="toggle('desc-contaminazioni')">Contaminazioni</div>
         <div id="desc-contaminazioni" class="project-description">
-          <p>"Contaminazioni" è un’esperienza musicale e visiva che fonde generi e stili diversi in un dialogo sonoro visivo e creativo, in continua evoluzione.</p>
+          <p>"Contaminazioni" rappresenta un’esperienza che attraversa barriere musicali e stilistiche. L’oboe, il violino, la viola, il violoncello e le percussioni si intrecciano in un percorso sonoro dove immagini proiettate in tempo reale espandono il linguaggio musicale. I generi si fondono: la musica classica dialoga con il jazz, il pop, la musica da film. L’improvvisazione è parte dell’atto creativo e della relazione con il pubblico. Ogni concerto è un evento multisensoriale.</p>
         </div>
       </div>
       <img src="img/contaminazioni.png" alt="Contaminazioni" onclick="toggle('desc-contaminazioni')">
@@ -136,10 +138,10 @@
       <div class="project-text">
         <div class="project-title" onclick="toggle('desc-cinema')">Metti una sera al cinema</div>
         <div id="desc-cinema" class="project-description">
-          <p>Omaggio ai grandi compositori di musica da film: Morricone, Rota, Piovani, e a cantautori come Tenco, Aznavour, Piazzolla. Musica e immagini per evocare ricordi e storie.</p>
+          <p>“Metti una sera al cinema” è uno spettacolo-concerto che omaggia i più grandi compositori di musica da film: Ennio Morricone, Nino Rota, Bacalov, Nicola Piovani. Ma anche chi è stato preso in prestito da grandi registi, come Luigi Tenco, Charles Aznavour, Pino Daniele, Paolo Conte, Astor Piazzolla. La musica da film è un linguaggio che unisce musica colta e popolare, parole e immagini, evocazione e memoria. L’ensemble di Fusion Waves propone una selezione intensa e raffinata con archi, oboe,...
         </div>
       </div>
-      <img src="img/cinema.png" alt="Metti una sera al cinema" onclick="toggle('desc-cinema')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Film_reel_icon.svg/512px-Film_reel_icon.svg.png" alt="Metti una sera al cinema" onclick="toggle('desc-cinema')">
     </div>
   </div>
 
