@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,13 +13,43 @@
       background-position: center;
       height: 100vh;
       overflow: hidden;
+      font-family: sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.7em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #f0c040;
+    }
+    .logo-container {
+      position: fixed;
+      top: 0.3em;
+      right: 2vw;
+      z-index: 1100;
+    }
+    .logo-container img {
+      height: 85px;
+      object-fit: contain;
     }
     .hotspot {
       position: absolute;
-      width: 80px;
-      height: 80px;
+      width: 104px;
+      height: 104px;
       cursor: pointer;
       opacity: 0;
+      z-index: 1;
     }
     .label {
       position: absolute;
@@ -26,10 +57,10 @@
       color: white;
       padding: 5px 10px;
       border-radius: 5px;
-      font-family: sans-serif;
       font-size: 14px;
       white-space: nowrap;
       display: none;
+      z-index: 2;
     }
     .hotspot:hover + .label {
       display: block;
@@ -37,11 +68,23 @@
   </style>
 </head>
 <body>
-  <a href="img/soraya.png" class="hotspot" style="top: 25%; left: 12%;"></a><div class="label" style="top: 25%; left: 12%;">Soraya</div>
-  <a href="img/stefania.png" class="hotspot" style="top: 70%; left: 12%;"></a><div class="label" style="top: 70%; left: 12%;">Stefania</div>
-  <a href="img/pierpaolo.png" class="hotspot" style="top: 66%; left: 76%;"></a><div class="label" style="top: 66%; left: 76%;">Pierpaolo</div>
-  <a href="img/gianfabio.png" class="hotspot" style="top: 22%; left: 73%;"></a><div class="label" style="top: 22%; left: 73%;">Gianfabio</div>
-  <a href="img/ezio.png" class="hotspot" style="top: 48%; left: 59%;"></a><div class="label" style="top: 48%; left: 59%;">Ezio</div>
-  <a href="img/nadia.png" class="hotspot" style="top: 25%; left: 32%;"></a><div class="label" style="top: 25%; left: 32%;">Nadia</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="progetti.html">Progetti</a>
+    <a href="concerti.html">Concerti</a>
+    <a href="media.html">Media</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <div class="logo-container">
+    <a href="index.html"><img src="img/logo.png" alt="Fusion Waves logo"></a>
+  </div>
+
+  <a href="img/soraya.png" class="hotspot" style="top: 30%; left: 20%;"></a><div class="label" style="top: 30%; left: 20%;">Soraya</div>
+  <a href="img/stefania.png" class="hotspot" style="top: 65%; left: 16%;"></a><div class="label" style="top: 65%; left: 16%;">Stefania</div>
+  <a href="img/pierpaolo.png" class="hotspot" style="top: 60%; left: 78%;"></a><div class="label" style="top: 60%; left: 78%;">Pierpaolo</div>
+  <a href="img/gianfabio.png" class="hotspot" style="top: 28%; left: 68%;"></a><div class="label" style="top: 28%; left: 68%;">Gianfabio</div>
+  <a href="img/ezio.png" class="hotspot" style="top: 43%; left: 58%;"></a><div class="label" style="top: 43%; left: 58%;">Ezio</div>
+  <a href="img/nadia.png" class="hotspot" style="top: 36%; left: 37%;"></a><div class="label" style="top: 36%; left: 37%;">Nadia</div>
+
 </body>
 </html>
