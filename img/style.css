@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+}
+
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 100px 40px 40px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.titolo {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.descrizione p {
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    margin-bottom: 25px;
+}
+
+.video {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.descrizione p strong {
+    font-size: 1.3em;
+}
+
+
+.logo {
+    width: 139px;
+    height: auto;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .logo {
+        width: 110px;
+    }
+    .menu ul li a {
+        font-size: 1.2em;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 480px) {
+    .logo {
+        width: 90px;
+    }
+    .menu ul li a {
+        font-size: 1.3em;
+    }
+}
