@@ -1,0 +1,33 @@
+
+/* Stile coerente per logo su tutte le pagine */
+.logo-container {
+  position: fixed;
+  top: 0.3em;
+  right: 2vw;
+  z-index: 1100;
+}
+.logo-container img.logo {
+  height: 85px;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+/* Stile menu */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.7em 0;
+  text-align: center;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+nav a:hover {
+  color: #f0c040;
+}

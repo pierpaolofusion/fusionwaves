@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<title>Fusion Waves - Intro</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      background-color: #222;
+      overflow: hidden;
+    }
+
+    .intro-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 260px;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 2s ease-in-out;
+      z-index: 1000;
+    }
+
+    .move-logo {
+      top: 20px;
+      left: calc(100% - 160px);
+      width: 139px;
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="progetti.html">Progetti</a>
+<a href="concerti.html">Concerti</a>
+<a href="media.html">Media</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<div class="logo-container">
+<a href="index.html"><img alt="Fusion Waves logo" class="logo" src="img/logo.png"/></a>
+</div>
+
+<img class="intro-logo" id="logo" src="img/logo.png"/>
+<script>
+    const logo = document.getElementById('logo');
+
+    window.onload = () => {
+      setTimeout(() => {
+        logo.classList.add('move-logo');
+      }, 100);
+
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 2500);
+    };
+  </script>
+</body>
+</html>
