@@ -3,40 +3,50 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Intro - Fusion Waves</title>
+  <title>Fusion Waves - Intro</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
-      background-color: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background-color: #222;
       overflow: hidden;
     }
-    .logo {
-      width: 200px;
-      transition: all 2s ease;
-      cursor: pointer;
+
+    .intro-logo {
       position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 260px;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all 2s ease-in-out;
+      z-index: 1000;
     }
-    .logo.move {
+
+    .move-logo {
       top: 20px;
-      right: 20px;
-      width: 80px;
-      position: fixed;
+      left: calc(100% - 160px);
+      width: 139px;
+      transform: translate(0, 0);
+      opacity: 1;
     }
   </style>
 </head>
 <body>
-  <img src="img/logo.png" class="logo" id="logo" alt="Fusion Waves Logo">
+  <img src="img/logo.png" class="intro-logo" id="logo">
+
   <script>
-    document.getElementById("logo").addEventListener("click", function() {
-      this.classList.add("move");
-      setTimeout(function() {
+    const logo = document.getElementById('logo');
+
+    window.onload = () => {
+      setTimeout(() => {
+        logo.classList.add('move-logo');
+      }, 100);
+
+      setTimeout(() => {
         window.location.href = "index.html";
-      }, 2000);
-    });
+      }, 2500);
+    };
   </script>
 </body>
 </html>

@@ -1,32 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Contatti - Fusion Waves</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<title>Contatti - Fusion Waves</title>
+<link href="style.css" rel="stylesheet"/>
+
+<style>
+    .logo-container {
+      position: fixed;
+      top: 0.3em;
+      right: 2vw;
+      z-index: 1100;
+    }
+
+    .logo-container img {
+      height: 85px;
+      object-fit: contain;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.7em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #f0c040;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a>
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="progetti.html">Progetti</a></li>
-            <li><a href="concerti.html">I Concerti</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1 class="titolo">Contatti</h1>
-        <div class="descrizione">
-            <p><strong>Nome:</strong> Pietro Paolo Marino</p>
-            <p><strong>Email:</strong> flagioletto@gmail.com</p>
-            <p><strong>Telefono:</strong> 3470526452</p>
-            <p><strong>Associazione:</strong> ACM Beinasco - Associazione Culturale e Musicale di Beinasco ETS</p>
-            <p><strong>Sito:</strong> <a href="https://www.acmbeinasco.org" target="_blank">acmbeinasco.org</a></p>
-        </div>
-    </main>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="progetti.html">Progetti</a>
+<a href="concerti.html">Concerti</a>
+<a href="media.html">Media</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<div class="logo-container">
+<a href="index.html"><img alt="Fusion Waves logo" src="img/logo.png"/></a>
+</div>
+
+<header>
+<a href="index.html"><img alt="Fusion Waves Logo" class="logo" src="img/logo.png"/></a>
+</header>
+<nav class="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="progetti.html">Progetti</a></li>
+<li><a href="concerti.html">I Concerti</a></li>
+<li><a href="media.html">Media</a></li>
+<li><a href="contatti.html">Contatti</a></li>
+</ul>
+</nav>
+<main>
+<h1 class="titolo">Contatti</h1>
+<div class="descrizione">
+<p><strong>Nome:</strong> Pietro Paolo Marino</p>
+<p><strong>Email:</strong> flagioletto@gmail.com</p>
+<p><strong>Telefono:</strong> 3470526452</p>
+<p><strong>Associazione:</strong> ACM Beinasco - Associazione Culturale e Musicale di Beinasco ETS</p>
+<p><strong>Sito:</strong> <a href="https://www.acmbeinasco.org" target="_blank">acmbeinasco.org</a></p>
+</div>
+</main>
 </body>
 </html>

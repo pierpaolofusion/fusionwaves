@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Progetti - Fusion Waves</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<title>Progetti - Fusion Waves</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet"/>
+<style>
     .logo {
       height: 100px;
       position: fixed;
@@ -101,54 +102,94 @@
       transform: scale(1.03);
     }
   </style>
+
+<style>
+    .logo-container {
+      position: fixed;
+      top: 0.3em;
+      right: 2vw;
+      z-index: 1100;
+    }
+
+    .logo-container img {
+      height: 85px;
+      object-fit: contain;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 0.7em 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #f0c040;
+    }
+  </style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="progetti.html">Progetti</a>
-    <a href="concerti.html">Concerti</a>
-    <a href="media.html">Media</a>
-    <a href="contatti.html">Contatti</a>
-  </nav>
+<nav>
+<a href="index.html">Home</a>
+<a href="progetti.html">Progetti</a>
+<a href="concerti.html">Concerti</a>
+<a href="media.html">Media</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<div class="logo-container">
+<a href="index.html"><img alt="Fusion Waves logo" src="img/logo.png"/></a>
+</div>
 
-  <header><a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a></header>
-
-  <div class="content">
-    <h1>Progetti</h1>
-
-    <div class="project">
-      <div class="project-text">
-        <div class="project-title" onclick="toggle('desc-kronos')">Kronos</div>
-        <div id="desc-kronos" class="project-description">
-          <p>"Kronos" è un progetto multimediale in cui il tempo si fa suono, visione, esperienza. La progressione musicale e visiva accompagna lo spettatore in un viaggio che unisce l’ineluttabilità del tempo con il desiderio di sospenderlo.</p>
-        </div>
-      </div>
-      <img src="img/kronos.png" alt="Kronos" onclick="toggle('desc-kronos')">
-    </div>
-
-    <div class="project">
-      <div class="project-text">
-        <div class="project-title" onclick="toggle('desc-contaminazioni')">Contaminazioni</div>
-        <div id="desc-contaminazioni" class="project-description">
-          <p>"Contaminazioni" è un’esperienza musicale e visiva che fonde generi e stili diversi in un dialogo sonoro visivo e creativo, in continua evoluzione.</p>
-        </div>
-      </div>
-      <img src="img/contaminazioni.png" alt="Contaminazioni" onclick="toggle('desc-contaminazioni')">
-    </div>
-
-    <div class="project">
-      <div class="project-text">
-        <div class="project-title" onclick="toggle('desc-cinema')">Metti una sera al cinema</div>
-        <div id="desc-cinema" class="project-description">
-          <p>Omaggio ai grandi compositori di musica da film: Morricone, Rota, Piovani, e a cantautori come Tenco, Aznavour, Piazzolla. Musica e immagini per evocare ricordi e storie.</p>
-        </div>
-      </div>
-      <img src="img/cinema.png" alt="Metti una sera al cinema" onclick="toggle('desc-cinema')">
-    </div>
-  </div>
-
-  <script>
+<nav>
+<a href="index.html">Home</a>
+<a href="progetti.html">Progetti</a>
+<a href="concerti.html">Concerti</a>
+<a href="media.html">Media</a>
+<a href="contatti.html">Contatti</a>
+</nav>
+<header><a href="index.html"><img alt="Fusion Waves Logo" class="logo" src="img/logo.png"/></a></header>
+<div class="content">
+<h1>Progetti</h1>
+<div class="project">
+<div class="project-text">
+<div class="project-title" onclick="toggle('desc-kronos')">Kronos</div>
+<div class="project-description" id="desc-kronos">
+<p>"Kronos" è un progetto multimediale in cui il tempo si fa suono, visione, esperienza. La progressione musicale e visiva accompagna lo spettatore in un viaggio che unisce l’ineluttabilità del tempo con il desiderio di sospenderlo.</p>
+</div>
+</div>
+<img alt="Kronos" onclick="toggle('desc-kronos')" src="img/kronos.png"/>
+</div>
+<div class="project">
+<div class="project-text">
+<div class="project-title" onclick="toggle('desc-contaminazioni')">Contaminazioni</div>
+<div class="project-description" id="desc-contaminazioni">
+<p>"Contaminazioni" è un’esperienza musicale e visiva che fonde generi e stili diversi in un dialogo sonoro visivo e creativo, in continua evoluzione.</p>
+</div>
+</div>
+<img alt="Contaminazioni" onclick="toggle('desc-contaminazioni')" src="img/contaminazioni.png"/>
+</div>
+<div class="project">
+<div class="project-text">
+<div class="project-title" onclick="toggle('desc-cinema')">Metti una sera al cinema</div>
+<div class="project-description" id="desc-cinema">
+<p>Omaggio ai grandi compositori di musica da film: Morricone, Rota, Piovani, e a cantautori come Tenco, Aznavour, Piazzolla. Musica e immagini per evocare ricordi e storie.</p>
+</div>
+</div>
+<img alt="Metti una sera al cinema" onclick="toggle('desc-cinema')" src="img/cinema.png"/>
+</div>
+</div>
+<script>
     function toggle(id) {
       var el = document.getElementById(id);
       el.style.display = el.style.display === 'block' ? 'none' : 'block';
