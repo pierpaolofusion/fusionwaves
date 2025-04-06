@@ -1,37 +1,33 @@
 
-body {
-  margin: 0;
-  background-color: #111;
-  color: white;
-  font-family: sans-serif;
+/* Stile coerente per logo su tutte le pagine */
+.logo-container {
+  position: fixed;
+  top: 0.3em;
+  right: 2vw;
+  z-index: 1100;
 }
-.logo {
-  height: 80px;
-  margin: 10px;
+.logo-container img.logo {
+  height: 85px;
+  object-fit: contain;
+  max-width: 100%;
 }
-nav.menu {
-  background: #222;
+
+/* Stile menu */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.7em 0;
   text-align: center;
-  padding: 10px 0;
+  z-index: 1000;
 }
-nav.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav.menu li {
-  display: inline;
-  margin: 0 15px;
-}
-nav.menu a {
+nav a {
   color: white;
   text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
 }
-nav.menu a:hover {
+nav a:hover {
   color: #f0c040;
-}
-.titolo {
-  text-align: center;
-  margin-top: 2em;
-  font-size: 2em;
 }
