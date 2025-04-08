@@ -1,46 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <title>Fusion Waves - Intro</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       background-color: #222;
       overflow: hidden;
-      font-family: sans-serif;
-    }
-
-    .intro-container {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
+      cursor: pointer;
     }
 
     .intro-logo {
       position: absolute;
       top: 50%;
-      left: 35%;
-      width: 500px;
+      left: 50%;
+      width: 300px;
       transform: translate(-50%, -50%);
-      transition: all 1.8s ease-in-out;
+      transition: all 1.5s ease-in-out;
       opacity: 1;
       z-index: 1000;
-      cursor: pointer;
-    }
-
-    .intro-image {
-      position: absolute;
-      top: 50%;
-      left: 75%;
-      transform: translate(-50%, -50%);
-      width: 300px;
-      opacity: 1;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .hidden {
-      opacity: 0;
     }
 
     .move-logo {
@@ -49,44 +30,25 @@
       width: 120px;
       transform: translate(0, 0);
     }
-
-    iframe.home-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      border: none;
-      opacity: 0;
-      transition: opacity 1.2s ease-in-out;
-      z-index: 500;
-    }
-
-    .home-visible {
-      opacity: 1;
-    }
   </style>
 </head>
 <body>
-  <div class="intro-container">
-    <img src="img/logo.png" class="intro-logo" id="logo">
-    <img src="img/placeholder.jpg" class="intro-image" id="extraImg" alt="Extra Image">
-    <iframe src="home.html" class="home-content" id="homeFrame"></iframe>
-  </div>
+  <img src="img/logo.png" class="intro-logo" id="logo">
 
   <script>
     window.onload = () => {
       const logo = document.getElementById('logo');
-      const image = document.getElementById('extraImg');
-      const frame = document.getElementById('homeFrame');
+      let clicked = false;
 
-      logo.addEventListener('click', () => {
-        logo.classList.add('move-logo');
-        image.classList.add('hidden');
-        setTimeout(() => {
-          frame.classList.add('home-visible');
-        }, 1000);
-      });
+      window.onclick = () => {
+        if (!clicked) {
+          clicked = true;
+          logo.classList.add('move-logo');
+          setTimeout(() => {
+            window.location.href = "index.html";
+          }, 1800);
+        }
+      };
     };
   </script>
 </body>
