@@ -4,110 +4,45 @@
     <meta charset="UTF-8">
     <title>Fusion Waves</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            background-color: #1c1c1c;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .logo-container {
-            position: fixed;
-            top: 0.3em;
-            right: 2vw;
-            z-index: 1100;
-        }
-
-        .logo-container img {
-            height: 85px;
-            object-fit: contain;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 0.7em 0;
-            text-align: center;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #f0c040;
-        }
-
-        main {
-            padding: 120px 10vw 60px 10vw;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: justify;
-        }
-
-        h1.titolo {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 40px;
-        }
-
-        .video {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        iframe {
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-    </style>
 </head>
 <body>
-
-    <div class="logo-container">
-        <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo"></a>
-    </div>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="progetti.html">Progetti</a>
-        <a href="concerti.html">I Concerti</a>
-        <a href="media.html">Media</a>
-        <a href="contatti.html">Contatti</a>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="img/logo.png" alt="Fusion Waves Logo" class="logo"></a>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="concerti.html">I Concerti</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
     </nav>
-
     <main>
         <h1 class="titolo">Fusion Waves</h1>
-        <p>
-            Fusion Waves è un collettivo musicale che esplora i confini tra generi, linguaggi e sensazioni.
-            Un’onda in movimento che attraversa la musica classica e contemporanea, fondendo tradizione e sperimentazione in una visione trasversale e aperta.
-        </p>
-        <p>
-            I nostri progetti nascono dal desiderio di contaminare e far dialogare forme espressive diverse:
-            suono e immagine, partitura e improvvisazione, rigore e intuizione.
-        </p>
-        <p>
-            Ogni performance è un viaggio sensoriale, dove le armonie si intrecciano con suggestioni visive
-            e richiami alla musica per il cinema, creando esperienze immersive che raccontano storie senza parole.
-        </p>
-
+        <div class="descrizione">
+            <p>
+                Fusion Waves è un collettivo musicale che esplora i confini tra generi, linguaggi e sensazioni.
+                Un’onda in movimento che attraversa la musica classica e contemporanea, fondendo tradizione e sperimentazione in una visione trasversale e aperta.
+            </p>
+            <p>
+                I nostri progetti nascono dal desiderio di contaminare e far dialogare forme espressive diverse:
+                suono e immagine, partitura e improvvisazione, rigore e intuizione.
+            </p>
+            <p>
+                Ogni performance è un viaggio sensoriale, dove le armonie si intrecciano con suggestioni visive
+                e richiami alla musica per il cinema, creando esperienze immersive che raccontano storie senza parole.
+            </p>
+        </div>
         <div class="video">
             <h2>Guarda il live di "Onde"</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/CEKECkYTcBQ?si=4Ae4eHDYYKFC0reM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
         </div>
     </main>
-
 </body>
 </html>
