@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>I Concerti - Fusion Waves</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            background-color: #1c1c1c;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <title>I Concerti - Fusion Waves</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 100px;
+    }
 
-        .logo-container {
-            position: fixed;
-            top: 0.3em;
-            right: 2vw;
-            z-index: 1100;
-        }
+    .logo-container {
+      position: fixed;
+      top: 0.5em;
+      right: 2vw;
+      z-index: 1100;
+    }
 
-        .logo-container img {
-            height: 85px;
-            object-fit: contain;
-        }
+    .logo-container img {
+      height: 85px;
+    }
 
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 0.7em 0;
-            text-align: center;
-            z-index: 1000;
-        }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      padding: 0.7em 0;
+      text-align: center;
+      z-index: 1000;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1em;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
 
-        nav a:hover {
-            color: #f0c040;
-        }
+    nav a:hover {
+      color: #f0c040;
+    }
 
-        main {
-            padding: 120px 10vw 60px 10vw;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: justify;
-        }
+    h1 {
+      text-align: center;
+      color: #f0c040;
+      font-size: 3em;
+      margin-bottom: 40px;
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 2.8em;
-            margin-bottom: 30px;
-        }
+    .concert {
+      margin: 0 auto 3em;
+      max-width: 800px;
+      padding: 1em;
+      border-bottom: 1px solid #444;
+    }
 
-        .evento {
-            margin-bottom: 2em;
-        }
+    .concert h2 {
+      font-size: 1.5em;
+      color: #f0c040;
+    }
 
-        .evento-title {
-            color: #f0c040;
-            font-size: 1.3em;
-            font-weight: bold;
-        }
-    </style>
+    .concert p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .concert a {
+      color: #80bfff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="progetti.html">Progetti</a>
+    <a href="concerti.html">I Concerti</a>
+    <a href="media.html">Media</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
 
-    <div class="logo-container">
-        <a href="home.html"><img src="img/logo.png" alt="Fusion Waves Logo"></a>
-    </div>
+  <div class="logo-container">
+    <a href="home.html"><img src="img/logo.png" alt="Fusion Waves Logo"></a>
+  </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="progetti.html">Progetti</a>
-        <a href="concerti.html">I Concerti</a>
-        <a href="media.html">Media</a>
-        <a href="contatti.html">Contatti</a>
-    </nav>
+  <h1>I Concerti</h1>
 
-    <main>
-        <h1>I Concerti</h1>
+  <div class="concert">
+    <h2>Kronos</h2>
+    <p><strong>Data:</strong> 22 giugno 2025</p>
+    <p><strong>Luogo:</strong> Teatro Luini, via Luini 90, Torino</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
 
-        <div class="evento">
-            <div class="evento-title">Kronos – 16 maggio 2025</div>
-            Oratorio Sant'Anna di Borgaretto, via Galileo Galilei 12, 10092 Borgaretto – ore 21:00
-        </div>
+  <div class="concert">
+    <h2>Kronos</h2>
+    <p><strong>Data:</strong> 16 maggio 2025</p>
+    <p><strong>Luogo:</strong> Oratorio Sant'Anna di Borgaretto, via Galileo Galilei 12, 10092 Borgaretto</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
 
-        <div class="evento">
-            <div class="evento-title">Contaminazioni – 19 aprile 2024</div>
-            Ex Chiesa Santa Croce, Beinasco – ore 21
-        </div>
+  <div class="concert">
+    <h2>Contaminazioni</h2>
+    <p><strong>Data:</strong> 19 aprile 2024</p>
+    <p><strong>Luogo:</strong> Ex Chiesa Santa Croce, Beinasco</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
 
-        <div class="evento">
-            <div class="evento-title">Contaminazioni – 12 ottobre 2023</div>
-            Oratorio San Filippo Neri, Torino – ore 21
-        </div>
+  <div class="concert">
+    <h2>Contaminazioni</h2>
+    <p><strong>Data:</strong> 12 ottobre 2023</p>
+    <p><strong>Luogo:</strong> Oratorio San Filippo Neri</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
 
-        <div class="evento">
-            <div class="evento-title">Metti una sera al cinema – 17 giugno 2023</div>
-            Oratorio San Filippo Neri, via Maria Vittoria 5, Torino – ore 21<br>
-            <a href="https://www.evients.com/events/metti-una-sera-al-cinema/9dfe373c14044b91a8029449a96e899b" target="_blank" style="color:#4faeff;">Link all’evento</a>
-        </div>
+  <div class="concert">
+    <h2>Metti una sera al cinema</h2>
+    <p><strong>Data:</strong> 17 giugno 2023</p>
+    <p><strong>Luogo:</strong> Oratorio San Filippo Neri, via Maria Vittoria 5, Torino</p>
+    <p><strong>Orario:</strong> 21:00</p>
+    <p><a href="https://www.evients.com/events/metti-una-sera-al-cinema/9dfe373c14044b91a8029449a96e899b" target="_blank">Link evento</a></p>
+  </div>
 
-        <div class="evento">
-            <div class="evento-title">Metti una sera al cinema – 22 febbraio 2023</div>
-            Ex Chiesa Santa Croce, Beinasco – ore 21
+  <div class="concert">
+    <h2>Metti una sera al cinema</h2>
+    <p><strong>Data:</strong> 22 febbraio 2023</p>
+    <p><strong>Luogo:</strong> Ex Chiesa Santa Croce, Beinasco</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
+
+  <div class="concert">
+    <h2>Metti una sera al cinema</h2>
+    <p><strong>Data:</strong> 19 novembre 2022</p>
+    <p><strong>Luogo:</strong> Teatro Luini, via Luini 90, Torino</p>
+    <p><strong>Orario:</strong> 21:00</p>
+  </div>
+
+</body>
+</html>
