@@ -17,14 +17,14 @@
 
     .intro-logo {
       position: absolute;
-      top: 45%;
+      top: 44%;
       left: 50%;
       width: 320px;
       transform: translate(-50%, -50%);
       transition: all 1.5s ease-in-out;
       opacity: 1;
       z-index: 1000;
-      animation: float 3s ease-in-out infinite;
+      animation: float 2s ease-in-out infinite;
     }
 
     .move-logo {
@@ -35,9 +35,26 @@
       animation: none;
     }
 
+    .logo-shadow {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      z-index: 500;
+      animation: shadow-pulse 2s ease-in-out infinite;
+    }
+
+    .hide-shadow {
+      display: none;
+    }
+
     .enter-text {
       position: absolute;
-      top: 72%;
+      top: 75%;
       left: 50%;
       transform: translateX(-50%);
       font-size: 1.2em;
@@ -52,18 +69,25 @@
 
     @keyframes float {
       0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-      50% { transform: translate(-50%, -50%) translateY(-15px); }
+      50% { transform: translate(-50%, -50%) translateY(-12px); }
+    }
+
+    @keyframes shadow-pulse {
+      0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.5; }
+      50% { transform: translateX(-50%) scale(1.3, 0.8); opacity: 0.35; }
     }
   </style>
 </head>
 <body>
   <img src="img/logo.png" class="intro-logo" id="logo">
+  <div class="logo-shadow" id="shadow"></div>
   <div class="enter-text" id="enterText">Entra</div>
 
   <script>
     window.onload = () => {
       const logo = document.getElementById('logo');
       const enterText = document.getElementById('enterText');
+      const shadow = document.getElementById('shadow');
       let clicked = false;
 
       window.onclick = () => {
@@ -71,6 +95,7 @@
           clicked = true;
           logo.classList.add('move-logo');
           enterText.classList.add('hidden');
+          shadow.classList.add('hide-shadow');
           setTimeout(() => {
             window.location.href = "home.html";
           }, 1800);
@@ -80,4 +105,3 @@
   </script>
 </body>
 </html>
-
